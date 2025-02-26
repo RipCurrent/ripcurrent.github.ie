@@ -13,6 +13,7 @@
 select * from sys.sql_logins
 
 --users(at the database level)
+--you create a db user for a server login e.g. create user myuser for login mylogin
 select * from sys.database_principals where type ='S'
 
 --select roles
