@@ -19,6 +19,10 @@ select * from sys.database_principals where type ='S'
 --select roles
 select * from sys.database_principals where type ='R'
 
+-- granting roles (note db_datawriter does not inherit db_datareader, you need to grant both)
+exec sp_addrolemember 'db_datawriter','d365_admin'
+exec sp_addrolemember 'db_datareader','d365_admin'
+
 -- user roles
 SELECT    roles.principal_id                            AS RolePrincipalID
     ,    roles.name                                    AS RolePrincipalName
