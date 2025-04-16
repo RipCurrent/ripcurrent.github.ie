@@ -8,9 +8,17 @@ comprised of:
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
 
-## Sentiel
-SIEM
-Its a ticketing system
+## Sentinel
+In its simplest form, a SIEM system allows you to:
+- Collect and query logs.
+- Do some form of correlation or anomaly detection.
+- Create alerts and incidents based on your findings.
+Functionality
+- Log Management
+- Alerting
+- Visualisation
+- Incident Management
+- Query Data
 
 ## Others
 Additional integrations to:
