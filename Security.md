@@ -20,6 +20,11 @@ Functionality
 - Incident Management
 - Query Data
 
+Features
+- Workbooks
+- Notebooks
+- Watchlist
+
 ![image](https://github.com/user-attachments/assets/f3fb8a40-88c9-465f-ace4-1c47cdc9454b)
 
 
