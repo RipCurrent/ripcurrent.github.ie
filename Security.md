@@ -6,7 +6,7 @@ comprised of:
 - Microsoft Defender for Endpoints
 - Microsoft Defender for Office 365
 - Microsoft Defender for Identity
-- Microsoft Defender for Cloud Apps
+- Microsoft Defender for Cloud Apps [managed in azure portal](https://portal.azure.com/#view/Microsoft_Azure_Security/SecurityMenuBlade/~/0)
 
 ## Sentinel
 In its simplest form, a SIEM system allows you to:
