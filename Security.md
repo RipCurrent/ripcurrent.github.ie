@@ -21,14 +21,16 @@ Functionality
 - Query Data
 
 Features
-- Workbooks
+- Workbooks -> ie a dashboard
 - Notebooks
 - Watchlist
 
 ![image](https://github.com/user-attachments/assets/f3fb8a40-88c9-465f-ace4-1c47cdc9454b)
 
 
-
+## EntraID Protection
+Risk Users, Risky sign-in, Risky Apps
+Identity based risks. Can feed Conditional Access & SIEM
 
 ## Others
 Additional integrations to:
