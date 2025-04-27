@@ -11,6 +11,7 @@ comprised of:
 ## Sentinel
 In its simplest form, a SIEM system allows you to:
 - Collect and query logs.
+  - Use Data Connectors to Azure Activity etc
 - Do some form of correlation or anomaly detection.
 - Create alerts and incidents based on your findings.
 Functionality
