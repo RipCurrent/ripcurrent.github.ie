@@ -16,6 +16,10 @@ Policies
 - Session
 - OAuth App
 
+## Defender for Endpoints
+- Attack surface reduction
+
+## Defender for Cloud Apps
 
 ## Sentinel
 In its simplest form, a SIEM system allows you to:
@@ -40,6 +44,12 @@ Features
 - Analytics -> create queries or incident creation rules. NRT & Schedule can see rule logic
 
 ![image](https://github.com/user-attachments/assets/f3fb8a40-88c9-465f-ace4-1c47cdc9454b)
+
+Collecting SysLog and CEF
+- install Azure Monitor Agent on the VM source or the log forwarder (linux VM)
+- under DataConnectors, create a new rule -> script generated
+- script uses rsyslog or syslog-ng, post 514 and Python
+
 
 
 ## EntraID Protection
