@@ -10,10 +10,12 @@
 ## Users and Logins
 ```
 --logins (how you logon to server)
+-- create login sync_reader with password = 'xxxxxxx'
 select * from sys.sql_logins
 
 --users(at the database level)
 --you create a db user for a server login e.g. create user myuser for login mylogin
+-- create user sync_reader for login sync_reader
 select * from sys.database_principals where type ='S'
 
 --select roles
