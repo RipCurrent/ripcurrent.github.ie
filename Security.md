@@ -7,6 +7,8 @@ comprised of:
 - Microsoft Defender for Office 365
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps [managed in azure portal](https://portal.azure.com/#view/Microsoft_Azure_Security/SecurityMenuBlade/~/0)
+- Microsoft Defender for Cloud workload protections
+  - Defender for Servers, App Service, Storage, SQL, OpenSource SQL, KeyVault, Resource Manageer, DNS, Containers, Additional protections
 
 Policies
 - File
