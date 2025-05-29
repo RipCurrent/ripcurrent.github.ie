@@ -1,7 +1,13 @@
 # Azure
 General concepts, hints and tips.
 
+## Table of Contents
+1. [App Registrations](#appregistrations)
+2. [Service Principals](#ServicePrincipals)
+
 ## Applications
+
+<a name="appregistrations" />
 
 ### App Registrations
 - Use App Registration to register *your* application for use with AD
@@ -10,6 +16,8 @@ General concepts, hints and tips.
   -  to brand the sign-on experience, control what users have access
   - The app can request scope permissions e.g. "User.Read" to read the user profile
   - Share a secret with Identifity platform which *proves the apps identity*. (used as our app is confidential). Uses this secret when requesting tokens.
+
+<a name="ServicePrincipals" />
 
 ### Service Principals
 - Service principals are a Microsoft Entra application resource you create within your tenant to perform unattended resource and service level operations.
