@@ -4,13 +4,18 @@ General concepts, hints and tips.
 ## Table of Contents
 1. [App Registrations](#appregistrations)
 2. [Service Principals](#ServicePrincipals)
+3. [Enterprise Applications](#EnterpriseApplications)
+4. [Web App](#WebApp)
+5. [App Configuration](#AppConfiguration)
+6. [Key Vault and App Configuration](#KeyVaultandAppConfiguration)
+7. [Secrets Manager](#SecretsManager)
 
 ## Applications
 
 <a name="appregistrations" />
 
 ### App Registrations
-- Use App Registration to register *your* application for use with AD
+- Use App Registration to register *your* application for use with Entra i.e. Identity
 - for identity provider to know that a user has access to an app, the user and the app must be registered
 - Also allows us:
   -  to brand the sign-on experience, control what users have access
@@ -24,11 +29,15 @@ General concepts, hints and tips.
 - They're a unique type of user identity with an application ID and password or certificate.
 - A service principal has only those permissions necessary to perform tasks defined by the roles and permissions for which it is assigned.
 
-### Enterprise Application
+<a name="EnterpriseApplications" />
+
+### Enterprise Applications
 - Use these to register an instance of this application. Other organisations could have an Enterprise Application for your App Registration.
 - You'll see many Enterprise applications listed as this will contain those which are used by your organisation but built but others (e.g. Adobe etc)
 - The enterprise application resource controls what the app can do in our tenant
-  
+
+<a name="WebApp" />
+
 ### Web App
 - create a web application (does not need an App Registration etc)
 - push code to this using GIT. This is a great option, can set this for CI.
@@ -41,6 +50,8 @@ General concepts, hints and tips.
   - push code directly to Web App
   - there is an automatic build under Deployment area [Oryx](https://github.com/microsoft/Oryx/tree/main)
   - setup your deployment/git options if need be 
+
+<a name="AppConfiguration" />
 
 ### App Configuration
 the simplest app configuration is just to use the "Configuration" tab in a Wep App blade.
@@ -68,6 +79,8 @@ builder.Configuration.AddAzureAppConfiguration(connectionString);
 // Bind configuration "TestApp:Settings" section to the Settings object
 ```
 
+<a name="KeyVaultandAppConfiguration" />
+
 ### Key Vault and App Configuration
 Add the option for Key Vault Reference retrieval
 ```
@@ -90,8 +103,7 @@ To Use the first, EnvironmentCredential, add the environment variables in **laun
 ```
 On the Key Vault IAM, Add the Service Principal as a Key Vault Secrets User 
 
-
-
+<a name="Secrets Manager" />
 
 ### Secrets Manager
 - use the secrets manager to save secrets in development environment to local json file
