@@ -1,6 +1,11 @@
 # Powershell Tips
 Hints & tips on using Powershell
 
+## Latest versions
+Use
+- Powershell 7
+- Az module instead of deprecated AzureRM
+
 ## General
 use the ` character to span across lines  
 remember boolean is $true/$false and not 'true'/'false' !  
