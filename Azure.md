@@ -82,6 +82,7 @@ builder.Configuration.AddAzureAppConfiguration(connectionString);
 <a name="KeyVaultandAppConfiguration" />
 
 ### Key Vault and App Configuration
+#### code
 Add the option for Key Vault Reference retrieval
 ```
 builder.Configuration.AddAzureAppConfiguration(options =>
@@ -94,14 +95,19 @@ builder.Configuration.AddAzureAppConfiguration(options =>
     });
 });
 ```
+
+### local development
 The default credential tries using one of a number of credentials to connect. 
-To Use the first, EnvironmentCredential, add the environment variables in **launch.settings.json** (and not launch.json!)
+To Use the first, EnvironmentCredential, add the environment variables in **launch.settings.json** (and not launch.json! Also note it should be under the launch profile that you are using)
 ```
         "AZURE_TENANT_ID":"<guid>",
         "AZURE_CLIENT_ID":"<guid>",
         "AZURE_CLIENT_SECRET":"<guid>"
 ```
-On the Key Vault IAM, Add the Service Principal as a Key Vault Secrets User 
+On the Key Vault IAM, Add the Service Principal as a * *Key Vault Secrets User* *. 
+
+#### server side
+For this to work, you need to enable the managed identity on the App Service and grant this managed identity the same * *Key Vault Secrets User* * role
 
 <a name="Secrets Manager" />
 
