@@ -17,6 +17,7 @@ General concepts, hints and tips.
 ### App Registrations
 - Use App Registration to register *your* application for use with Entra i.e. Identity
 - for identity provider to know that a user has access to an app, the user and the app must be registered
+- Is an abstract entity, global representation
 - Also allows us:
   -  to brand the sign-on experience, control what users have access
   - The app can request scope permissions e.g. "User.Read" to read the user profile
@@ -25,9 +26,10 @@ General concepts, hints and tips.
 <a name="ServicePrincipals" />
 
 ### Service Principals
+- Local representation of global application in a specific tenant
 - Service principals are a Microsoft Entra application resource you create within your tenant to perform unattended resource and service level operations.
 - They're a unique type of user identity with an application ID and password or certificate.
-- A service principal has only those permissions necessary to perform tasks defined by the roles and permissions for which it is assigned.
+- A service principal has only those permissions necessary to perform tasks defined by the roles and permissions for which it is assigned. (defines what an application can do in a tenant)
 
 <a name="EnterpriseApplications" />
 
@@ -37,6 +39,10 @@ General concepts, hints and tips.
 - The enterprise application resource controls what the app can do in our tenant
 
 <a name="WebApp" />
+
+### Managed Identity
+- Special type of Service Principal that eliminates the need to manage credentials
+
 
 ### Web App
 - create a web application (does not need an App Registration etc)
