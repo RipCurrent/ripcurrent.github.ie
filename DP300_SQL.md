@@ -10,6 +10,7 @@
 
 - Azure SQL Purchasing Model
   - vCore-based (GP, Business Critical, Hyperscale)
+    - Hyperscale new Tech, once converted you can't go back. High Perf, instant backup / scaling. moves beyoud standard limiations. Cost marginally more than Azure SQL db.
   - DTU-based (Basic, Standard, Premium) (managed db does not support this option)
 - Tier
   - Provisioned
