@@ -3,8 +3,13 @@ Hints & tips on using Powershell
 
 ## Latest versions
 Use
-- Powershell 7
+- Powershell 7 (check version $PSVersionTable.PSVersion)
 - Az module instead of deprecated AzureRM
+```
+Get-Modules -list     // list modules
+SetExecutionPolicy -ExcutionPolicy RemoteSigned -Scope CurrentUser
+Install-Module -Name Az -Repository PSGallery -Force
+```
 
 ## General
 use the ` character to span across lines  
