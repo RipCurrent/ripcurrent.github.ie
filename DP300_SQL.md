@@ -20,7 +20,7 @@
   - Predict for Machine Learning
   - Table paritioning -> when large rowcount impacts queries. Use of partition functions
   - Data Compression -> compress indexes, more data on the 8kb page, less I/O
-
+  - Elastic Pool -> good option for multitenant databases
 
 - SQL on VM
   - types of disk
